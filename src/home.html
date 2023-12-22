@@ -1,31 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Home </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,300&family=Dancing+Script:wght@600&family=Dosis:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
-    <main>
-        <section id="Top">
-                <h2> <i>Home</i></h2>
-                <blockquote> Shoot for the moon even when you <i>miss</i> it you will land among the stars</blockquote>
-            <img src="../src/Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="../src/Images/Home.webp" alt="Home" width="1000" height="200">
-            <a href="#Top"> Read More</a>
-            <img src="../src/Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
+<body class="bg-white-400">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <section class="flex justify-between items-center">
+            <span class="text-2xl font-[poppins] cursor-pointer">
+                <img src="./Images/Logo.jpg" alt="Logo" width="50" height="50" class="h-10 inline">
+                Rediet Woudma 
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
         </section>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transtition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./home.html" class="text-xl  duration-500"> Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./hobby.html" class="text-xl  duration-500"> Hobby</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Places_visited.html" class="text-xl  duration-500"> Places Visited</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Books_read.html" class="text-xl  duration-500"> Books read</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Contributions.html" class="text-xl  duration-500"> Contributions</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="p-2">
         <section>
-            <h2> Professional Summary </h2>
-            <p> Versatile software engineering graduate with a degree in law, combining technical proficiency and legal knowledge to deliver innovative solutions. Strong project management skills, adept at navigating complex regulations, and ensuring compliance. Effective collaborator and problem-solver, with a passion for staying current in both software engineering and legal practices.</p>
-            </section>
-            <section>
-                <h2> Skills</h2>
-                <ul> <li> Software Development </li>
+        <section class="relative p-2">
+            <ul id="slider">
+            <li class="h-[70vh] relative">
+                <img class="h-full w-full object-cover" src="./Images/Home.webp" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p-10" style="font-family: 'Dosis', sans-serif;">Home</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"> Shoot for the moon even when you <i>miss</i> it you will land among the stars</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/hobby.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p-10" style="font-family: 'Dosis', sans-serif;">Hobby</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">We are what we repeatedly do, <i>Excellence</i>, then is not an act but a <em>habit</em>.</blockquote>
+                </div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Travel.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Places visited</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Where to <i>next</i>? </blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Books.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Books read</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"><em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover opacity-4" src="./Images/contibutions.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl italic font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Contributions</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Life is not accumulation, it is <em>contribution</em>.</blockquote></div>
+            </li>
+        </ul>
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+                <div class="my-auto w-full flex justify-between "><button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                      </svg>                      
+                </button>
+                <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>                      
+                </button></div>
+            </div>
+        </section></section>
+        <section>
+            <h2 class="text-4xl"> Professional Summary </h2>
+            <p style="font-family: 'DM Sans', sans-serif;"> Versatile software engineering graduate with a degree in law, combining technical proficiency and legal knowledge to deliver innovative solutions. Strong project management skills, adept at navigating complex regulations, and ensuring compliance. Effective collaborator and problem-solver, with a passion for staying current in both software engineering and legal practices.</p>
+            </section><br>
+            <section class="columns">
+            <section class="skill  is-one-third">
+                <h2 class="text-4xl p-2"> Skills</h2>
+                <ul style="font-family: 'DM Sans', sans-serif;"> <li> Software Development </li>
                     <li> Legal Compliance</li>
                     <li>Research analysis </li>
                     <li>problem solving</li>
@@ -36,60 +107,93 @@
                     <li> Project Management</li>
                     <li> Continuous Learning </li></ul>
             </section>
-            <section> 
-                <h2> Educational Background</h2>
-                <p> <strong>Bachelor of Science</strong> : Software Engineering and Computing Technologies, Addis Ababa University, 2021-2026: <br>
+            <section class="background  "> 
+                <h2 class="text-4xl p-2"> Educational Background</h2>
+                <p style="font-family: 'DM Sans', sans-serif;"> <strong>Bachelor of Science</strong> : Software Engineering and Computing Technologies, Addis Ababa University, 2021-2026: <br>
                     Completed a comprehensive program that provided a strong foundation in software engineering principles, programming languages, and software development methodologies. Developed skills in designing and implementing software solutions, collaborating in team environments, and delivering successful projects.</p>
-                <p> <strong> Bachelor of Arts </strong> : Jurisprudence, University of Oxford, 2027-2030: <br>
+                <p style="font-family: 'DM Sans', sans-serif;"> <strong> Bachelor of Arts </strong> : Jurisprudence, University of Oxford, 2027-2030: <br>
                     Pursued a prestigious program in Jurisprudence at the University of Oxford, studying law and legal theory at an advanced level. Explored various areas of law, including contract law, criminal law, constitutional law, and more. Gained critical thinking, analytical, and research skills necessary for legal analysis and problem-solving. Engaged in rigorous academic study and developed a comprehensive understanding of legal principles and their application in different contexts.</p>
-            </section>
+            </section></section>
             <section> 
-                    <h2>Work Experience </h2>
-                <p><em>Software Engineer, Amazon, 2026: </em><br>
+                    <h2 class="text-4xl p-2">Work Experience </h2>
+                <p style="font-family: 'DM Sans', sans-serif;"><em>Software Engineer, Amazon, 2026: </em><br>
 
                     Worked as a software engineer at Amazon for one year, contributing to the development of large-scale software systems. Collaborated with cross-functional teams to design and implement innovative solutions, ensuring high-performance and scalability. Gained experience in agile software development methodologies, code review processes, and delivering robust software products.</p>
-                    <p><em>Software Engineering Intern, Amazon, 2025:</em><br>
+                    <p style="font-family: 'DM Sans', sans-serif;"><em>Software Engineering Intern, Amazon, 2025:</em><br>
                     Completed a challenging internship at Amazon, supporting software engineering projects and gaining hands-on experience in real-world software development. Assisted in the design, development, and testing of software applications, while learning from experienced professionals in the field.</p>
-                    <p> <em>UI/UX Designer, RDX, 2024:</em><br>
+                    <p style="font-family: 'DM Sans', sans-serif;"> <em>UI/UX Designer, RDX, 2024:</em><br>
                     Worked as a UI/UX designer at RDX, focusing on creating intuitive and visually appealing user interfaces for digital products. Collaborated with multidisciplinary teams, including developers and product managers, to understand user needs and design engaging user experiences. Conducted user research, created wireframes and prototypes, and iteratively improved designs based on user feedback.</p>
-            </section>
+            </section><br>
             <section>
-                <h2> Languages </h2>
-                <ul> <li> Amharic : Proficent </li>
+                <h2 class="text-4xl p-2"> Languages </h2>
+                <ul style="font-family: 'DM Sans', sans-serif;"> <li> Amharic : Proficent </li>
                     <li> English : Proficent</li>
                 <li> French: Intermediate </li></ul>
-            </section>
-            <section> <h2> Referees</h2>
-                <p>Name: Dr. Anna Müller<br>
+            </section><br>
+            <section> <h2 class="text-4xl"> Referees</h2>
+                <p style="font-family: 'DM Sans', sans-serif;">Name: Dr. Anna Müller<br>
                 Position: Senior Manager<br>
                 Company: Amazon Germany<br>
                 Email: anna.mueller@amazon.de<br>
-                Phone: +49 1234567890<br></p>
-                <p>Name: John Smith<br>
+                Phone: +49 1234567890<br></p><br>
+                <p style="font-family: 'DM Sans', sans-serif;">Name: John Smith<br>
                 Position: Senior Software Engineer<br>
                 Company: RDX Technologies<br>
                 Email: john.smith@rdxtech.com<br>
                 Phone: +1 123-456-7890<br></p></section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-        <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-        Redietwoudma@gmail.com<br>
-        <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-        +251 912141567<br>
-        <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-        <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-        <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-        <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
+    <footer class="bg-slate-100 p-5">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <section>
+            <h4 class="subtitle">Contact</h4>
+            <section class="contact-item flex">
+              <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+              Redietwoudma@gmail.com
+              <br>
+            </section>
+            <section class="contact-item flex">
+              <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+              +251 912141567
+              <br>
+            </section>
+          </section>
+          <section class="social-media flex">
+            <section class="icons1 flex">
+              <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/">
+                <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+              </a>
+              <a href="https://www.instagram.com/?next=%2Fyourprofile%2F">
+                <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+              </a>
+              <a href="https://t.me/Rediet_Woudma">
+                <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+              </a>
+              <a href="https://www.whatsapp.com/yourprofile">
+                <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+              </a>
+            </section>
+          </section>
+          <section class="quicklinks">
+            <h4 class="subtitle">Quick Links</h4>
+            <a href="#Top">Home</a>
+            <br>
+            <a href="./Hobby.html">Hobby</a>
+            <br>
+            <a href="./Places_visited.html">Places Visited</a>
+            <br>
+            <a href="./Books_read.html">Books Read</a>
+            <br>
+            <a href="./Contributions.html">Contributions</a>
+            <br>
+          </section>
         </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="#Top"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
-        </section>
-    </footer>
+      </footer>
+  <script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')): (e.name = "menu" , list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
