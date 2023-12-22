@@ -1,95 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Places Visited </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,300&family=Dancing+Script:wght@600&family=Dosis:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="output.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
-    <main>
-        <section id="Top">
-            <h2> <i>Places Visited</i></h2>
-            <blockquote> Where to <i>next</i>? </blockquote>
-            <img src="./Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="./Images/Travel.jpg" alt="Places visited" width="1000" height="300">
-            <a href="#Top"> Read More</a>
-            <img src="./Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
+<body class="bg-white-400">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <section class="flex justify-between items-center">
+            <span class="text-2xl font-[poppins] cursor-pointer">
+                <img src="./Images/Logo.jpg" alt="Logo" width="50" height="50" class="h-10 inline">
+                Rediet Woudma 
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
         </section>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transtition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./home.html" class="text-xl  duration-500"> Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./hobby.html" class="text-xl  duration-500"> Hobby</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Places_visited.html" class="text-xl  duration-500"> Places Visited</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Books_read.html" class="text-xl  duration-500"> Books read</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Contributions.html" class="text-xl  duration-500"> Contributions</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <main class="p-2">
         <section>
-            <h3> Lalibela | Ethiopia</h3>
-            <p> My journey from Addis Ababa to Lalibela was a deeply enriching and pride-filled experience.,The rolling hills, majestic mountains, and lush valleys reminded me of Ethiopia's natural beauty and the rich tapestry of our land.
-                Arriving in Lalibela, I felt a profound connection to our heritage. The rock-hewn churches, symbols of our ancient civilization, stood as testaments to the ingenuity and devotion of our ancestors. As I explored these sacred sites, I couldn't help but feel a sense of reverence and awe, knowing that I was walking in the footsteps of generations past.
-                The vibrant marketplaces in Lalibela welcomed me with open arms. The bustling atmosphere, filled with the vibrant colors of traditional garments and the aroma of Ethiopian spices, created a sensory delight. Engaging with local vendors and artisans allowed me to experience the warmth, hospitality, and artistic talents that are deeply ingrained in our Ethiopian culture.
-                The scenic vistas, the cultural treasures, and the rich history all came together to create a sense of pride within me. In that moment, I realized how fortunate I was to call Ethiopia my home.
-                The journey allowed me to not only connect with the physical beauty of our country but also to reconnect with my own identity as an Ethiopian. It was a reminder of the remarkable heritage and vibrant culture that we carry within us, and it filled my heart with a renewed sense of appreciation and love for Ethiopia.</p>
-                <figure>
-                    <video src="./Images/Lalibela_video.mp4" controls>
-                    </video>
-                    <figcaption> Rock-Hewn Churches of Lalibela, Ethiopia</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h3> Jungfrau | Switzerland </h3>
-                <p> With its majestic snow-capped peaks, pristine glaciers, and picturesque valleys, Jungfrau offers a surreal landscape that leaves a lasting impression. The Jungfrau Railway takes you through tunnels carved within the mountains, leading to the summit where panoramic views of the Swiss Alps await. During my visit, I embarked on an incredible journey aboard the Jungfrau Railway, an engineering marvel that tunnels through the heart of the mountains. As I ventured deeper into the tunnels, anticipation grew, and suddenly, a world of wonder unfolded before my eyes. Emerging onto Jungfrau's summit, I was greeted by a 360-degree spectacle of nature's grandeur. The view was nothing short of mesmerizing, with jagged peaks piercing the sky and endless stretches of pristine beauty stretching as far as the eye could see. Beyond Jungfrau, Switzerland's charm extends with quaint villages, delicious Swiss cuisine, and other natural wonders. From Lake Geneva to Zurich, Switzerland captivates with its diverse tapestry of experiences. Jungfrau and the treasures of Switzerland create memories that will forever hold a special place in my heart.</p>
-                <figure>
-                    <img src="./Images/switzerland.webp" alt="Jungfrau" width="400" height="300">
-                    <figcaption> Breathtaking beauty of Jungfrau in Switzerland </figcaption>
-                </figure>
-            </section>
-            <section>
-                <h3> Paris | France</h3>
-                <p> Visiting Paris was a dream come true. The moment I set foot in the City of Lights, I was captivated by its timeless charm and elegance. The grand boulevards lined with iconic Haussmann-style buildings, the enchanting Seine River flowing gracefully through the heart of the city, and the majestic landmarks that seemed to be lifted from a fairytale—all contributed to an atmosphere of unparalleled beauty.
-                    Exploring the streets of Paris was like stepping into a living work of art. The vibrant neighborhoods, such as Montmartre with its bohemian charm, and the lively Latin Quarter with its intellectual allure, offered a glimpse into the city's diverse cultural fabric. Every corner seemed to hold a story, and I delighted in discovering hidden gems, cozy cafés, and boutiques brimming with Parisian chic.
-                    Of course, no visit to Paris would be complete without marveling at its world-renowned landmarks. Standing before the Eiffel Tower, I felt a sense of awe as it soared into the sky, symbolizing the city's spirit of innovation and romance. The Louvre Museum, with its vast collection of art spanning centuries, transported me through time and left me in awe of human creativity.
-                    Indulging in the culinary delights of Paris was a true gastronomic adventure. From savoring delicate pastries at charming patisseries to experiencing the artistry of French cuisine in cozy bistros, each bite was a sensory delight. The city's culinary scene celebrated the rich traditions of French gastronomy, and I relished every opportunity to immerse myself in its flavors and aromas.</p>
-                    <figure>
-                        <img src="./Images/Paris.webp" alt="Paris" width="400" height="300">
-                        <figcaption> Rue Crémieux, the most colourful street in Paris</figcaption>
-                    </figure>
-                </section>
-            <section>
-                <h3>Table Mountain | South Africa</h3>
-                <p>I had the incredible opportunity to ascend the iconic flat-topped peak and immerse myself in the breathtaking beauty it offers.
-                    As I embarked on the ascent to Table Mountain, anticipation and excitement filled the air. I chose to ride the cableway, which provided a thrilling journey upwards while granting me panoramic views of Cape Town and the surrounding landscapes. The sight from the top was nothing short of awe-inspiring. The vast expanse of the Atlantic Ocean stretched out before me, meeting the horizon in a breathtaking display of nature's grandeur.
-                    Exploring Table Mountain's diverse ecosystem was a delight for the senses.Table Mountain also offered an adventure playground for those seeking an adrenaline rush. I embarked on exhilarating hikes, traversing trails that led me through rocky terrain and rewarding me with stunning vistas at every turn. The challenge of the climb was perfectly balanced by the sheer beauty that surrounded me, making each step a testament to the mountain's allure.
-                    Beyond its natural splendor, Table Mountain holds a rich cultural and historical significance. I learned about the mountain's place in local mythology and the inspiration it has provided to artists and storytellers throughout the ages. It was humbling to be in a place that holds such significance for the people of South Africa and to feel the deep connection they have with this majestic landmark. I encourage others to embark on their own journey to Table Mountain to create their own cherished memories.</p>
-                <figure>
-                    <img src="./Images/SouthAfrica.webp" alt="Table mountain" width="400" height="300">
-                    <figcaption> A natural wonder that captivates the soul </figcaption>
-                </figure>
-            </section>
-            <section>
-                <h3> Oxford | England</h3>
-                <p>My visit to Oxford was a nostalgic journey back to my university days at the prestigious University of Oxford. Stepping foot in the city, I was immediately embraced by the aura of intellectualism and rich history that permeates its ancient streets. Every corner seemed to hold a story, and I couldn't wait to explore the nooks and crannies of this academic haven.
-                    One of the highlights of my visit was strolling through the hallowed grounds of Christ Church Meadow.Leaving Christ Church Meadow, I continued my exploration of Oxford, wandering through its historic streets lined with majestic colleges, charming bookstores, and inviting cafés. The city's rich heritage was palpable, and I soaked in the atmosphere, imagining the countless scholars, poets, and thinkers who had walked these same paths before me. </p>
-                <figure> <img src="./Images/Oxford.jfif" alt="Christ Church Meadow">
-                    <figcaption> Christ Church Meadow, Oxford </figcaption>
-                </figure>
-                </section>
+        <section class="relative p-2">
+            <ul id="slider">
+            <li class="h-[70vh] relative">
+                <img class="h-full w-full object-cover" src="./Images/Home.webp" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p-10" style="font-family: 'Dosis', sans-serif;">Home</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"> Shoot for the moon even when you <i>miss</i> it you will land among the stars</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/hobby.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p-10" style="font-family: 'Dosis', sans-serif;">Hobby</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">We are what we repeatedly do, <i>Excellence</i>, then is not an act but a <em>habit</em>.</blockquote>
+                </div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Travel.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Places visited</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Where to <i>next</i>? </blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Books.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Books read</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"><em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover opacity-4" src="./Images/contibutions.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl italic font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Contributions</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Life is not accumulation, it is <em>contribution</em>.</blockquote></div>
+            </li>
+        </ul>
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+                <div class="my-auto w-full flex justify-between "><button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                      </svg>                      
+                </button>
+                <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>                      
+                </button></div>
+            </div>
+        </section></section>
+        <h3 class="text-2xl font-bold py-8">Lalibela | Ethiopia</h3>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <p class="text-lg">My journey from Addis Ababa to Lalibela was a deeply enriching and pride-filled experience. The rolling hills, majestic mountains, and lush valleys reminded me of Ethiopia's natural beauty and the rich tapestry of our land.
+    Arriving in Lalibela, I felt a profound connection to our heritage. The rock-hewn churches, symbols of our ancient civilization, stood as testaments to the ingenuity and devotion of our ancestors. As I explored these sacred sites, I couldn't help but feel a sense of reverence and awe, knowing that I was walking in the footsteps of generations past.
+    The vibrant marketplaces in Lalibela welcomed me with open arms. The bustling atmosphere, filled with the vibrant colors of traditional garments and the aroma of Ethiopian spices, created a sensory delight. Engaging with local vendors and artisans allowed me to experience the warmth, hospitality, and artistic talents that are deeply ingrained in our Ethiopian culture.
+    The scenic vistas, the cultural treasures, and the rich history all came together to create a sense of pride within me. In that moment, I realized how fortunate I was to call Ethiopia my home.
+    The journey allowed me to not only connect with the physical beauty of our country but also to reconnect with my own identity as an Ethiopian. It was a reminder of the remarkable heritage and vibrant culture that we carry within us, and it filled my heart with a renewed sense of appreciation and love for Ethiopia.</p>
+  <figure>
+    <video src="./Images/Lalibela_video.mp4" controls class="w-full">
+    </video>
+    <figcaption class="text-center">Rock-Hewn Churches of Lalibela, Ethiopia</figcaption>
+  </figure>
+</section><h3 class="text-2xl font-bold">Jungfrau | Switzerland</h3>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-row-reverse">
+  <p class="text-lg">With its majestic snow-capped peaks, pristine glaciers, and picturesque valleys, Jungfrau offers a surreal landscape that leaves a lasting impression. The Jungfrau Railway takes you through tunnels carved within the mountains, leading to the summit where panoramic views of the Swiss Alps await. During my visit, I embarked on an incredible journey aboard the Jungfrau Railway, an engineering marvel that tunnels through the heart of the mountains. As I ventured deeper into the tunnels, anticipation grew, and suddenly, a world of wonder unfolded before my eyes. Emerging onto Jungfrau's summit, I was greeted by a 360-degree spectacle of nature's grandeur. The view was nothing short of mesmerizing, with jagged peaks piercing the sky and endless stretches of pristine beauty stretching as far as the eye could see. Beyond Jungfrau, Switzerland's charm extends with quaint villages, delicious Swiss cuisine, and other natural wonders. From Lake Geneva to Zurich, Switzerland captivates with its diverse tapestry of experiences. Jungfrau and the treasures of Switzerland create memories that will forever hold a special place in my heart.</p>
+  <figure>
+    <img src="./Images/switzerland.webp" alt="Jungfrau" class="w-full">
+    <figcaption class="text-center">Breathtaking beauty of Jungfrau in Switzerland</figcaption>
+  </figure>
+</section>
+<br>
+<h3 class="text-2xl font-bold">Paris | France</h3>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <p class="text-lg">Visiting Paris was a dream come true. The moment I set foot in the City of Lights, I was captivated by its timeless charm and elegance. The grand boulevards lined with iconic Haussmann-style buildings, the enchanting Seine River flowing gracefully through the heart of the city, and the majestic landmarks that seemed to be lifted from a fairytale—all contributed to an atmosphere of unparalleled beauty.
+    Exploring the streets of Paris was like stepping into a living work of art. The vibrant neighborhoods, such as Montmartre with its bohemian charm, and the lively Latin Quarter with its intellectual allure, offered a glimpse into the city's diverse cultural fabric. Every corner seemed to hold a story, and I delighted in discovering hidden gems, cozy cafés, and boutiques brimming with Parisian chic.
+    Of course, no visit to Paris would be complete without marveling at its world-renowned landmarks. Standing before the Eiffel Tower, I felt a sense of awe as it soared into the sky, symbolizing the city's spirit of innovation and romance. The Louvre Museum, with its vast collection of art spanning centuries, transported me through time and left me in awe of human creativity.
+    Indulging in the culinary delights of Paris was a true gastronomic adventure. From savoring delicate pastries at charming patisseries to experiencing the artistry of French cuisine in cozy bistros, each bite was a sensory delight. The city's culinary scene celebrated the rich traditions of French gastronomy, and I relished every opportunity to immerse myself in its flavors and aromas.</p>
+  <figure>
+    <img src="./Images/Paris.webp" alt="Paris" class="w-full">
+    <figcaption class="text-center">Rue Crémieux, the most colourful street in Paris</figcaption>
+  </figure>
+</section>
+<br>
+<h3 class="text-2xl font-bold">Table Mountain | South Africa</h3>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-row-reverse">
+  <p class="text-lg">I had the incredible opportunity to ascend the iconic flat-topped peak and immerse myself in the breathtaking beauty it offers.
+    As I embarked on the ascent to Table Mountain, anticipation and excitement filled the air. I chose to ride the cableway, which provided a thrilling journey upwards while granting me panoramic views of Cape Town and the surrounding landscapes. The sight from the top was nothing short of awe-inspiring. The vast expanse of the Atlantic Ocean stretched out before me, meeting the horizon in a breathtaking display of nature's grandeur.
+    Exploring Table Mountain's diverse ecosystem was a delight for the senses. Table Mountain also offered an adventure playground for those seeking an adrenaline rush. I embarked on exhilarating hikes, traversing trails that led me through rocky terrain and rewarding me with stunning vistas at every turn. The challenge of the climb was perfectly balanced by the sheer beauty that surrounded me, making each step a testament to the mountain's allure.
+    Beyond its natural splendor,Here's the rest of the modified code:
+
+```html
+    Table Mountain holds a rich cultural and historical significance. I learned about the mountain's place in local mythology and the inspiration it has provided to artists and storytellers throughout the ages. It was humbling to be in a place that holds such significance for the people of South Africa and to feel the deep connection they have with this majestic landmark. I encourage others to embark on their own journey to Table Mountain to create their own cherished memories.</p>
+  <figure>
+    <img src="./Images/SouthAfrica.webp" alt="Table mountain" class="w-full">
+    <figcaption class="text-center">A natural wonder that captivates the soul</figcaption>
+  </figure>
+</section>
+<h3 class="text-2xl font-bold">Oxford | England</h3>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-row-reverse">
+  <p class="text-lg">My visit to Oxford was a nostalgic journey back to my university days at the prestigious University of Oxford. Stepping foot in the city, I was immediately embraced by the aura of intellectualism and rich history that permeates its ancient streets. Every corner seemed to hold a story, and I couldn't wait to explore the nooks and crannies of this academic haven.
+    One of the highlights of my visit was strolling through the hallowed grounds of Christ Church Meadow. Leaving Christ Church Meadow, I continued my exploration of Oxford, wandering through its historic streets lined with majestic colleges, charming bookstores, and inviting cafés. The city's rich heritage was palpable, and I soaked in the atmosphere, imagining the countless scholars, poets, and thinkers who had walked these same paths before me.</p>
+  <figure>
+    <img src="./Images/Oxford.jfif" alt="Christ Church Meadow" class="w-full">
+    <figcaption class="text-center">Christ Church Meadow, Oxford</figcaption>
+  </figure>
+</section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-            <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-            Redietwoudma@gmail.com<br>
-            <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-            +251 912141567<br>
-            <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-            <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-            <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-            <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
+    <footer class="bg-slate-100 p-5">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <section>
+            <h4 class="subtitle">Contact</h4>
+            <section class="contact-item flex">
+              <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+              Redietwoudma@gmail.com
+              <br>
             </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="./home.html"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
+            <section class="contact-item flex">
+              <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+              +251 912141567
+              <br>
+            </section>
+          </section>
+          <section class="social-media flex">
+            <section class="icons1 flex">
+              <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/">
+                <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+              </a>
+              <a href="https://www.instagram.com/?next=%2Fyourprofile%2F">
+                <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+              </a>
+              <a href="https://t.me/Rediet_Woudma">
+                <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+              </a>
+              <a href="https://www.whatsapp.com/yourprofile">
+                <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+              </a>
+            </section>
+          </section>
+          <section class="quicklinks">
+            <h4 class="subtitle">Quick Links</h4>
+            <a href="#Top">Home</a>
+            <br>
+            <a href="./Hobby.html">Hobby</a>
+            <br>
+            <a href="./Places_visited.html">Places Visited</a>
+            <br>
+            <a href="./Books_read.html">Books Read</a>
+            <br>
+            <a href="./Contributions.html">Contributions</a>
+            <br>
+          </section>
         </section>
-    </footer>
+      </footer>
+
+  <script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')): (e.name = "menu" , list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
