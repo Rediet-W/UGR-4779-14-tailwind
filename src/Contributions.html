@@ -1,69 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Contributions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,300&family=Dancing+Script:wght@600&family=Dosis:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="output.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
-    <main>
-        <section id="Top">
-            <h2> <i>Contributions</i> </h2>
-            <blockquote> Life is not accumulation, it is <em>contribution</em>.</blockquote>
-            <img src="./Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="./Images/contibutions.jpg" alt="contributions" width="1000" height="150">
-            <a href="#Top"> Read More</a>
-            <img src="./Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
+<body class="bg-white-400">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <section class="flex justify-between items-center">
+            <span class="text-2xl font-[poppins] cursor-pointer">
+                <img src="./Images/Logo.jpg" alt="Logo" width="50" height="50" class="h-10 inline">
+                Rediet Woudma 
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
         </section>
-        <section id="top">
-            <h3>Rac Debo</h3>
-            <p> As a dedicated member of the Rotary Club, I have made significant contributions in my roles.I have actively contributed to the Rotary Club by organizing and hosting joint sessions with other Rotary clubs. These collaborative sessions have provided opportunities for members from different clubs to come together, share ideas, and work collectively towards common goals. By facilitating these joint sessions, I have fostered a sense of unity and collaboration within the Rotary community, enabling us to make a greater impact on the causes we support.</p>
-            <p>In my capacity as a Software Engineer, I have utilized my technical expertise to develop innovative solutions that have positively impacted the club's operations. I have worked diligently to automate processes, streamline communication channels, and enhance efficiency within the club, ultimately enabling smoother coordination and improved collaboration among members.
-            Furthermore, as someone with a Bachelor of Laws degree, I have brought valuable legal insights to the Rotary Club. I have actively supported the club's initiatives by providing legal advice, reviewing contracts, and ensuring compliance with relevant laws and regulations. My legal background has enabled me to contribute to the club's decision-making processes and ensure that our actions align with ethical and legal standards.</p>
-            <figure><img src="./Images/rotary.jfif" alt="Rac debo">
-            <figcaption> RAC Debo BOD members</figcaption></figure>
-        </section>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transtition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./home.html" class="text-xl  duration-500"> Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./hobby.html" class="text-xl  duration-500"> Hobby</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Places_visited.html" class="text-xl  duration-500"> Places Visited</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Books_read.html" class="text-xl  duration-500"> Books read</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Contributions.html" class="text-xl  duration-500"> Contributions</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <main class="p-2">
         <section>
-            <h3>Talent Search Campaign</h3>
-            <p>In Ethiopia, I have taken the initiative to organize a yearly talent search campaign specifically tailored for teenagers. This campaign, held during the summer, aims to discover and nurture the unique talents and abilities of young Ethiopian students. By providing a platform for aspiring teenagers to showcase their skills, whether in the arts, sports, academics, or other areas of interest, the talent search campaign promotes personal growth, self-confidence, and celebrates the rich talent within Ethiopia's youth.</p>
-            <p>As part of the talent search campaign in Ethiopia, we go beyond simply providing a platform for teenagers to showcase their talents. We recognize the immense value of mentorship and learning from successful experts in various fields. Therefore, we make it a point to invite accomplished professionals and experts to participate in the campaign. These experts, who have achieved success in their respective fields, are invited to share their experiences, insights, and wisdom with the participating youth.
+        <section class="relative p-2">
+            <ul id="slider">
+            <li class="h-[70vh] relative">
+                <img class="h-full w-full object-cover" src="./Images/Home.webp" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p-10" style="font-family: 'Dosis', sans-serif;">Home</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"> Shoot for the moon even when you <i>miss</i> it you will land among the stars</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/hobby.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p-10" style="font-family: 'Dosis', sans-serif;">Hobby</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">We are what we repeatedly do, <i>Excellence</i>, then is not an act but a <em>habit</em>.</blockquote>
+                </div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Travel.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Places visited</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Where to <i>next</i>? </blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Books.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Books read</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"><em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover opacity-4" src="./Images/contibutions.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p-5">
+                <h2 class="text-4xl italic font-bold text-blue-500 my-auto w-full text-center px-20 p-10" style="font-family: 'Dosis', sans-serif;">Contributions</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Life is not accumulation, it is <em>contribution</em>.</blockquote></div>
+            </li>
+        </ul>
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+                <div class="my-auto w-full flex justify-between "><button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                      </svg>                      
+                </button>
+                <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>                      
+                </button></div>
+            </div>
+        </section></section>
+        <section id="top">
+            <h3 class="text-4xl">Rac Debo</h3><section class="rac-debo">
+            <section><p style="font-family: 'DM Sans', sans-serif;"> As a dedicated member of the Rotary Club, I have made significant contributions in my roles.I have actively contributed to the Rotary Club by organizing and hosting joint sessions with other Rotary clubs. These collaborative sessions have provided opportunities for members from different clubs to come together, share ideas, and work collectively towards common goals. By facilitating these joint sessions, I have fostered a sense of unity and collaboration within the Rotary community, enabling us to make a greater impact on the causes we support.</p>
+            <p style="font-family: 'DM Sans', sans-serif;">In my capacity as a Software Engineer, I have utilized my technical expertise to develop innovative solutions that have positively impacted the club's operations. I have worked diligently to automate processes, streamline communication channels, and enhance efficiency within the club, ultimately enabling smoother coordination and improved collaboration among members.
+            Furthermore, as someone with a Bachelor of Laws degree, I have brought valuable legal insights to the Rotary Club. I have actively supported the club's initiatives by providing legal advice, reviewing contracts, and ensuring compliance with relevant laws and regulations. My legal background has enabled me to contribute to the club's decision-making processes and ensure that our actions align with ethical and legal standards.</p>
+            </section>
+            <figure id="Racdebo"><img src="./Images/rotary.jfif" alt="Rac debo" width="300" >
+            <figcaption> RAC Debo BOD members</figcaption></figure>
+        </section></section>
+        <section>
+            <h3 class="text-4xl">Talent Search Campaign</h3><section class="talent-search">
+            ,<section><p style="font-family: 'DM Sans', sans-serif;">In Ethiopia, I have taken the initiative to organize a yearly talent search campaign specifically tailored for teenagers. This campaign, held during the summer, aims to discover and nurture the unique talents and abilities of young Ethiopian students. By providing a platform for aspiring teenagers to showcase their skills, whether in the arts, sports, academics, or other areas of interest, the talent search campaign promotes personal growth, self-confidence, and celebrates the rich talent within Ethiopia's youth.</p>
+            <p style="font-family: 'DM Sans', sans-serif;">As part of the talent search campaign in Ethiopia, we go beyond simply providing a platform for teenagers to showcase their talents. We recognize the immense value of mentorship and learning from successful experts in various fields. Therefore, we make it a point to invite accomplished professionals and experts to participate in the campaign. These experts, who have achieved success in their respective fields, are invited to share their experiences, insights, and wisdom with the participating youth.
                 By bringing in these successful experts, we create a unique opportunity for the youth to engage directly with established professionals. They have the chance to communicate, ask questions, and gain valuable guidance that can shape their own paths to success. This interaction fosters a sense of inspiration and motivation, as the young participants are exposed to real-life stories of achievement and are able to learn from those who have already walked the path they aspire to follow.
                 The presence of these successful experts adds an extra layer of significance to the talent search campaign in Ethiopia. It not only allows the youth to showcase their talents but also creates a platform for meaningful mentorship and knowledge exchange. By connecting aspiring teenagers with accomplished professionals, we foster a supportive environment where the youth can learn, grow, and be inspired to reach their full potential.</p>
-            <img src="./Images/talent2.jfif" alt="Speech" width="240" height="240">
+           </section> <img src="./Images/talent2.jfif" alt="Speech" width="240" height="240">
             <img src="./Images/talent3.jpg" alt="Speech 2" width="240" height="240">
-            </section>
+        </section></section>
         <section> 
-            <h3> Professional support</h3>
-            <p> As the owner of a tech company in Ethiopia, I am passionate about supporting organizations that provide assistance to the elderly, such as "Mekedoniya." Through my company, I offer free services in website design and database maintenance to help enhance their operations and outreach efforts.
+            <h3 class="text-4xl"> Professional support</h3>
+            <p style="font-family: 'DM Sans', sans-serif;"> As the owner of a tech company in Ethiopia, I am passionate about supporting organizations that provide assistance to the elderly, such as "Mekedoniya." Through my company, I offer free services in website design and database maintenance to help enhance their operations and outreach efforts.
                 Understanding the vital role of online presence in today's digital era, my team of skilled web designers and developers collaborate closely with "Mekedoniya" to create a visually appealing and user-friendly website. We work together to understand their specific needs and goals, ensuring that the website effectively communicates their mission, services, and support for the elderly community. By incorporating intuitive navigation, accessible design, and relevant content, we aim to create a website that fosters connectivity, provides valuable information, and encourages engagement.</p>
-            <p>Furthermore, we provide ongoing support in maintaining and updating the website's database. This includes managing and organizing data related to "Mekedoniya's" programs, resources, and volunteer opportunities. By implementing efficient database management systems, we help ensure the accurate storage and retrieval of information, enabling "Mekedoniya" to streamline their operations and better serve the elderly individuals they support.
+            <p style="font-family: 'DM Sans', sans-serif;">Furthermore, we provide ongoing support in maintaining and updating the website's database. This includes managing and organizing data related to "Mekedoniya's" programs, resources, and volunteer opportunities. By implementing efficient database management systems, we help ensure the accurate storage and retrieval of information, enabling "Mekedoniya" to streamline their operations and better serve the elderly individuals they support.
                 By offering these services free of charge to "Mekedoniya," we aim to empower them with the technological tools necessary to amplify their impact on the elderly community. We understand the importance of their work in providing care, assistance, and a supportive environment for the elderly population. Through our collaboration, we strive to enhance their visibility, expand their reach, and facilitate meaningful connections with potential beneficiaries, volunteers, and donors.
                 extending our support to other helping organizations as well. We recognize the importance of embracing technology to amplify the impact of such organizations and enhance their ability to serve their respective communities.</p>
         </section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-            <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-            Redietwoudma@gmail.com<br>
-            <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-            +251 912141567<br>
-            <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-            <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-            <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-            <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
+    <footer class="bg-slate-100 p-5">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <section>
+            <h4 class="subtitle">Contact</h4>
+            <section class="contact-item flex">
+              <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+              Redietwoudma@gmail.com
+              <br>
             </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="./home.html"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
+            <section class="contact-item flex">
+              <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+              +251 912141567
+              <br>
+            </section>
+          </section>
+          <section class="social-media flex">
+            <section class="icons1 flex">
+              <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/">
+                <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+              </a>
+              <a href="https://www.instagram.com/?next=%2Fyourprofile%2F">
+                <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+              </a>
+              <a href="https://t.me/Rediet_Woudma">
+                <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+              </a>
+              <a href="https://www.whatsapp.com/yourprofile">
+                <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+              </a>
+            </section>
+          </section>
+          <section class="quicklinks">
+            <h4 class="subtitle">Quick Links</h4>
+            <a href="#Top">Home</a>
+            <br>
+            <a href="./Hobby.html">Hobby</a>
+            <br>
+            <a href="./Places_visited.html">Places Visited</a>
+            <br>
+            <a href="./Books_read.html">Books Read</a>
+            <br>
+            <a href="./Contributions.html">Contributions</a>
+            <br>
+          </section>
         </section>
-    </footer>
+      </footer>
+
+  <script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')): (e.name = "menu" , list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
