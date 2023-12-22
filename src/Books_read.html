@@ -1,115 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Books Read</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,300&family=Dancing+Script:wght@600&family=Dosis:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="output.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
-    <main>
-        <section id="Top">
-                <h2> <i>Books Read</i> </h2>
-                <blockquote> <em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</blockquote>
-            <img src="./Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="./Images/Books.jpg" alt="contributions" width="1000" height="150">
-            <a href="#Top"> Read More</a>
-            <img src="./Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
+<body class="bg-white-400">
+    <nav class="p -5 bg-white shadow md:flex md:items-center md:justify-between">
+        <section class="flex justify-between items-center">
+            <span class="text-2xl font-[poppins] cursor-pointer">
+                <img src="./Images/Logo.jpg" alt="Logo" width="50" height="50" class="h-10 inline">
+                Rediet Woudma 
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
         </section>
-        <table>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Favorite Character</th>
-                <th>Memorable Quote</th>
-            </tr>
-            <tr>
-                <td>The Alchemist </td>
-                <td>Paulo Coelho</td>
-                <td>Santiago</td>
-                <td>"And, when you want something, all the universe conspires in helping you to achieve it."</td>
-            </tr>
-            <tr>
-                <td>Atomic Habits</td>
-                <td>James Clear</td>
-                <td>N/A</td>
-                <td>"You do not rise to the level of your goals, you fall to the level of your systems."</td>
-            </tr>
-            <tr>
-                <td>What I Know for Sure</td>
-                <td>Oprah Winfrey</td>
-                <td>N/A</td>
-                <td>"The more you praise and celebrate your life, the more there is in life to celebrate."</td>
-            </tr>
-            <tr>
-                <td> ሌላ ሰው</td>
-                <td> Dr Mihret Debebe </td>
-                <td> Mistere </td>
-                <td>"ጊዜ ከፈጣሪ ጋር የማይፈታው ችግር የሚፈጠረው፤ ለጊዜ ጊዜን መስጠት ሲሳነን ብቻ ነው"</td>
-            </tr>
-            <tr>
-                <td> Becoming </td>
-                <td> Michelle Obama </td>
-                <td> N/A </td>
-                <td>Now I think it’s one of the most useless questions an adult can ask a child—What do you want to be when you grow up? As if growing up is finite. As if at some point you become something and that’s the end.</td>
-            </tr>
-        </table>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transtition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./home.html" class="text-xl  duration-500"> Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./hobby.html" class="text-xl  duration-500"> Hobby</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Places_visited.html" class="text-xl  duration-500"> Places Visited</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Books_read.html" class="text-xl  duration-500"> Books read</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+                <a href="./Contributions.html" class="text-xl  duration-500"> Contributions</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <main class="p -2">
         <section>
-            <h3>The Alchemist </h3>
-            <img src="./Images/the_alchemist.jfif" alt="The alchemist" width="50" height="50">
-            <p>"The Alchemist" is a renowned novel written by Brazilian author Paulo Coelho. It tells the enchanting story of Santiago, a young shepherd who embarks on a journey of self-discovery and fulfillment. Throughout the pages of this inspiring book, Coelho weaves a tale that resonates with readers, imparting profound lessons along the way.
-            <p>One lesson I took from "The Alchemist" is the importance of following one's dreams and listening to the desires of the heart. Santiago's pursuit of his personal legend, his ultimate purpose in life, encourages us to identify our own dreams and have the courage to pursue them relentlessly. Coelho's narrative reminds us that the universe conspires to help those who are committed to their dreams, and that through perseverance and faith, we can overcome obstacles and achieve our true destinies.</p>
-            <p>Another significant lesson is the idea that the journey itself is as valuable as the destination. Santiago's encounters with various individuals and his experiences along his quest highlight the transformative power of embracing the present moment. Coelho invites readers to savor the beauty of the present, to be open to new experiences, and to trust in the process of life. "The Alchemist" reminds us that the lessons and growth we gain on our journey are often just as, if not more, important than the ultimate goal we seek.</p>
+        <section class="relative p -2">
+            <ul id="slider">
+            <li class="h-[70vh] relative">
+                <img class="h-full w-full object-cover" src="./Images/Home.webp" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p -5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p -10" style="font-family: 'Dosis', sans-serif;">Home</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"> Shoot for the moon even when you <i>miss</i> it you will land among the stars</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/hobby.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p -5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 italic p -10" style="font-family: 'Dosis', sans-serif;">Hobby</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">We are what we repeatedly do, <i>Excellence</i>, then is not an act but a <em>habit</em>.</blockquote>
+                </div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Travel.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p -5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p -10" style="font-family: 'Dosis', sans-serif;">Places visited</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Where to <i>next</i>? </blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover" src="./Images/Books.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p -5">
+                <h2 class="text-4xl font-bold text-blue-500 my-auto w-full text-center px-20 p -10" style="font-family: 'Dosis', sans-serif;">Books read</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif"><em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</blockquote></div>
+            </li>
+            <li class="h-[70vh] relative hidden">
+                <img class="h-full w-full object-cover opacity-4" src="./Images/contibutions.jpg" alt="background home">
+                <div class="absolute top-0 left-0 h-full w-full flex-row m-5 p -5">
+                <h2 class="text-4xl italic font-bold text-blue-500 my-auto w-full text-center px-20 p -10" style="font-family: 'Dosis', sans-serif;">Contributions</h2>
+                <blockquote class="text-2xl font-bold text-white my-auto w-full text-center px-20" style="font-family: 'Montserrat', sans-serif">Life is not accumulation, it is <em>contribution</em>.</blockquote></div>
+            </li>
+        </ul>
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+                <div class="my-auto w-full flex justify-between "><button onclick="prev()" class="bg-white p -3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                      </svg>                      
+                </button>
+                <button onclick="next()" class="bg-white p -3 rounded-full bg-opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>                      
+                </button></div>
+            </div>
+        </section></section>
+        <table class="table-auto w-full">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2">Title</th>
+                <th class="px-4 py-2">Author</th>
+                <th class="px-4 py-2">Favorite Character</th>
+                <th class="px-4 py-2">Memorable Quote</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-4 py-2">The Alchemist</td>
+                <td class="px-4 py-2">Paulo Coelho</td>
+                <td class="px-4 py-2">Santiago</td>
+                <td class="px-4 py-2">"And, when you want something, all the universe conspires in helping you to achieve it."</td>
+              </tr>
+              <tr class="bg-orange-100">
+                <td class="px-4 py-2">Atomic Habits</td>
+                <td class="px-4 py-2">James Clear</td>
+                <td class="px-4 py-2">N/A</td>
+                <td class="px-4 py-2">"You do not rise to the level of your goals, you fall to the level of your systems."</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-2">What I Know for Sure</td>
+                <td class="px-4 py-2">Oprah Winfrey</td>
+                <td class="px-4 py-2">N/A</td>
+                <td class="px-4 py-2">"The more you praise and celebrate your life, the more there is in life to celebrate."</td>
+              </tr>
+              <tr class="bg-orange-100">
+                <td class="px-4 py-2">ሌላ ሰው</td>
+                <td class="px-4 py-2">Dr Mihret Debebe</td>
+                <td class="px-4 py-2">ሚስጥር</td>
+                <td class="px-4 py-2">"ጊዜ ከፈጣሪ ጋር የማይፈታው ችግር የሚፈጠረው፤ ለጊዜ ጊዜን መስጠት ሲሳነን ብቻ ነው"</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-2">Becoming</td>
+                <td class="px-4 py-2">Michelle Obama</td>
+                <td class="px-4 py-2">N/A</td>
+                <td class="px-4 py-2">"Now I think it's one of the most useless questions an adult can ask a child—What do you want to be when you grow up? As if growing up is finite. As if at some point you become something and that's the end."</td>
+              </tr>
+            </tbody>
+          </table>
+        <section class="Book">
+            <section class="bookname-cover">      
+                <h3 class="text-4xl">The Alchemist </h3>
+            <img src="./Images/the_alchemist.jfif" alt="The alchemist" width="50" height="50" class="book_cover"></section>
+            <p style="font-family: 'DM Sans', sans-serif;">"The Alchemist" is a renowned novel written by Brazilian author Paulo Coelho. It tells the enchanting story of Santiago, a young shepherd who embarks on a journey of self-discovery and fulfillment. Throughout the pages of this inspiring book, Coelho weaves a tale that resonates with readers, imparting profound lessons along the way.
+            <p style="font-family: 'DM Sans', sans-serif;">One lesson I took from "The Alchemist" is the importance of following one's dreams and listening to the desires of the heart. Santiago's pursuit of his personal legend, his ultimate purpose in life, encourages us to identify our own dreams and have the courage to pursue them relentlessly. Coelho's narrative reminds us that the universe conspires to help those who are committed to their dreams, and that through perseverance and faith, we can overcome obstacles and achieve our true destinies.</p >
+            <p style="font-family: 'DM Sans', sans-serif;">Another significant lesson is the idea that the journey itself is as valuable as the destination. Santiago's encounters with various individuals and his experiences along his quest highlight the transformative power of embracing the present moment. Coelho invites readers to savor the beauty of the present, to be open to new experiences, and to trust in the process of life. "The Alchemist" reminds us that the lessons and growth we gain on our journey are often just as, if not more, important than the ultimate goal we seek.</p >
         </section>
         <section>
-            <h3> Atomic Habits</h3>
-            <img src="./Images/Atomic_habit.jfif" alt="Atomic habit" width="50" height="50">
-            <p>"Atomic Habits" is a compelling read that highlights the extraordinary impact of small habits on our lives. James Clear's insights and practical advice serve as a roadmap for developing positive behaviors and achieving long-term success. By embracing the power of atomic habits, we can unlock our potential, cultivate lasting change, and ultimately live a more fulfilling and purpose-driven life.</p>
-            <p>One of the key lessons I took from "Atomic Habits" is the concept of habit stacking. Clear emphasizes the importance of leveraging existing habits to create new ones. By identifying a current behavior and pairing it with a desired habit, we can seamlessly integrate positive actions into our lives. This approach allows us to tap into the power of momentum and make lasting changes more effectively. Whether it's tying a new habit to something as simple as brushing our teeth or incorporating it into our morning routine, habit stacking enables us to build a strong foundation for personal transformation and continuous improvement.</p>
+            <section class="bookname-cover" id="Atomic_habit">  
+            <h3 class="text-4xl"> Atomic Habits</h3>
+            <img src="./Images/Atomic_habit.jfif" alt="Atomic habit" width="50" height="50"></section>
+            <p style="font-family: 'DM Sans', sans-serif;">"Atomic Habits" is a compelling read that highlights the extraordinary impact of small habits on our lives. James Clear's insights and practical advice serve as a roadmap for developing positive behaviors and achieving long-term success. By embracing the power of atomic habits, we can unlock our potential, cultivate lasting change, and ultimately live a more fulfilling and purpose-driven life.</p >
+            <p style="font-family: 'DM Sans', sans-serif;">One of the key lessons I took from "Atomic Habits" is the concept of habit stacking. Clear emphasizes the importance of leveraging existing habits to create new ones. By identifying a current behavior and pairing it with a desired habit, we can seamlessly integrate positive actions into our lives. This approach allows us to tap into the power of momentum and make lasting changes more effectively. Whether it's tying a new habit to something as simple as brushing our teeth or incorporating it into our morning routine, habit stacking enables us to build a strong foundation for personal transformation and continuous improvement.</p >
         </section>
         <section>
-            <h3> What I know for sure</h3>
-            <img src="./Images/Oprah.jfif" alt="What I know for sure" width="50" height="50">
-            <p>"What I Know for Sure" is a profound and uplifting book by Oprah Winfrey that encapsulates her personal reflections and life lessons. Through a collection of heartfelt essays, Oprah shares her wisdom, experiences, and the truths she has come to embrace throughout her journey.</p>
-                <p>One of the core lessons I took from "What I Know for Sure" is the importance of gratitude. Oprah highlights the transformative power of cultivating a grateful mindset and appreciating the present moment. By acknowledging and expressing gratitude for the blessings in our lives, we can shift our perspective, invite more positivity, and find joy in the simplest of things.</p>
-                <p>Another key takeaway from the book is the significance of embracing authenticity and staying true to oneself. Oprah encourages readers to honor their own unique journeys, embrace their passions, and live with purpose and integrity. She emphasizes the importance of listening to our inner voice, following our intuition, and making choices that align with our values and aspirations.</p>
+            <section class="bookname-cover">  
+            <h3 class="text-4xl"> What I know for sure</h3>
+            <img src="./Images/Oprah.jfif" alt="What I know for sure" width="50" height="50"></section>
+            <p style="font-family: 'DM Sans', sans-serif;">"What I Know for Sure" is a profound and uplifting book by Oprah Winfrey that encapsulates her personal reflections and life lessons. Through a collection of heartfelt essays, Oprah shares her wisdom, experiences, and the truths she has come to embrace throughout her journey.</p >
+                <p style="font-family: 'DM Sans', sans-serif;">One of the core lessons I took from "What I Know for Sure" is the importance of gratitude. Oprah highlights the transformative power of cultivating a grateful mindset and appreciating the present moment. By acknowledging and expressing gratitude for the blessings in our lives, we can shift our perspective, invite more positivity, and find joy in the simplest of things.</p >
+                <p style="font-family: 'DM Sans', sans-serif;">Another key takeaway from the book is the significance of embracing authenticity and staying true to oneself. Oprah encourages readers to honor their own unique journeys, embrace their passions, and live with purpose and integrity. She emphasizes the importance of listening to our inner voice, following our intuition, and making choices that align with our values and aspirations.</p >
         </section>
         <section>
-            <h3> ሌላ ሰው</h3>
-            <img src="./Images/lela_sew.jfif" alt="Lela sew" width="50" height="50">
-            <p>"Lela Sew," a novel written by the renowned Ethiopian psychiatrist Dr. Mihret Debebe, captivated me with its exploration of human psychology. As I immersed myself in the pages of this psychological fiction, I encountered a rich tapestry of characters and their intricate relationships. The central theme of the book revolves around a psychologist who grapples with a profound dilemma between his dedication to his country and his family responsibilities.</p>
-            <p>One of the core lessons I took from "Lela Sew" is the understanding of human nature and the intricacies of the human psyche. Through the characters' experiences and interactions, I delved into the depths of personality, motivations, and the complexities of human behavior. This exploration served as a reminder of the vast spectrum of emotions and desires that shape our actions and relationships. It highlighted the importance of empathy and compassion as we navigate the intricacies of our own minds and the minds of others.</p>
+            <section class="bookname-cover" id="lela_sew">  
+            <h3 class="text-4xl"> ሌላ ሰው</h3>
+            <img src="./Images/lela_sew.jfif" alt="Lela sew" width="50" height="50"></section>
+            <p style="font-family: 'DM Sans', sans-serif;">"Lela Sew," a novel written by the renowned Ethiopian psychiatrist Dr. Mihret Debebe, captivated me with its exploration of human psychology. As I immersed myself in the pages of this psychological fiction, I encountered a rich tapestry of characters and their intricate relationships. The central theme of the book revolves around a psychologist who grapples with a profound dilemma between his dedication to his country and his family responsibilities.</p >
+            <p style="font-family: 'DM Sans', sans-serif;">One of the core lessons I took from "Lela Sew" is the understanding of human nature and the intricacies of the human psyche. Through the characters' experiences and interactions, I delved into the depths of personality, motivations, and the complexities of human behavior. This exploration served as a reminder of the vast spectrum of emotions and desires that shape our actions and relationships. It highlighted the importance of empathy and compassion as we navigate the intricacies of our own minds and the minds of others.</p >
         </section>
         <section>
-            <h3> Becoming</h3>
-            <img src="./Images/Becoming.jfif" alt="Becoming" width="50" height="50">
-            <p>Through her heartfelt storytelling and genuine vulnerability, Obama shares her journey of self-discovery, personal growth, and the lessons she learned along the way.
-                One of the most significant lessons I took from "Becoming" is the importance of embracing our own voice and identity. Obama's authenticity and unwavering commitment to staying true to herself, despite the challenges and expectations she faced, inspired me to reflect on my own journey of self-acceptance. Her story reminded me that it is through embracing our unique stories and backgrounds that we can truly make a difference in the world.</p>
-            <p>Another valuable lesson I gleaned from the book is the power of resilience and determination. Obama's unwavering belief in herself and her ability to overcome obstacles resonated deeply with me. Her story serves as a reminder that setbacks and failures are not roadblocks but opportunities for growth and learning. Through her example, I have been encouraged to persevere in the face of adversity and to never be afraid to pursue my dreams.</p>
+            <section class="bookname-cover">  
+            <h3 class="text-4xl"> Becoming</h3>
+            <img src="./Images/Becoming.jfif" alt="Becoming" width="50" height="50"></section>
+            <p style="font-family: 'DM Sans', sans-serif;">Through her heartfelt storytelling and genuine vulnerability, Obama shares her journey of self-discovery, personal growth, and the lessons she learned along the way.
+                One of the most significant lessons I took from "Becoming" is the importance of embracing our own voice and identity. Obama's authenticity and unwavering commitment to staying true to herself, despite the challenges and expectations she faced, inspired me to reflect on my own journey of self-acceptance. Her story reminded me that it is through embracing our unique stories and backgrounds that we can truly make a difference in the world.</p >
+            <p style="font-family: 'DM Sans', sans-serif;">Another valuable lesson I gleaned from the book is the power of resilience and determination. Obama's unwavering belief in herself and her ability to overcome obstacles resonated deeply with me. Her story serves as a reminder that setbacks and failures are not roadblocks but opportunities for growth and learning. Through her example, I have been encouraged to persevere in the face of adversity and to never be afraid to pursue my dreams.</p >
         </section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-            <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-            Redietwoudma@gmail.com<br>
-            <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-            +251 912141567<br>
-            <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-            <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-            <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-            <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
+    <footer class="bg-slate-100 p -5">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <section>
+            <h4 class="subtitle">Contact</h4>
+            <section class="contact-item flex">
+              <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+              Redietwoudma@gmail.com
+              <br>
             </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="./home.html"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
+            <section class="contact-item flex">
+              <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+              +251 912141567
+              <br>
+            </section>
+          </section>
+          <section class="social-media flex">
+            <section class="icons1 flex">
+              <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/">
+                <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+              </a>
+              <a href="https://www.instagram.com/?next=%2Fyourprofile%2F">
+                <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+              </a>
+              <a href="https://t.me/Rediet_Woudma">
+                <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+              </a>
+              <a href="https://www.whatsapp.com/yourprofile">
+                <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+              </a>
+            </section>
+          </section>
+          <section class="quicklinks">
+            <h4 class="subtitle">Quick Links</h4>
+            <a href="#Top">Home</a>
+            <br>
+            <a href="./Hobby.html">Hobby</a>
+            <br>
+            <a href="./Places_visited.html">Places Visited</a>
+            <br>
+            <a href="./Books_read.html">Books Read</a>
+            <br>
+            <a href="./Contributions.html">Contributions</a>
+            <br>
+          </section>
         </section>
-    </footer>
+      </footer>
+
+  <script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')): (e.name = "menu" , list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
